@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import axios from "axios";
 import { useState } from 'react';
+import Form from './components/Form';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
   console.log(foods);
   return (
     <div className=" bg-[#]">
+      <Form />
       {foods.map((food)=> <div><h1 className=" bg-[#626262]">{food.name}</h1> {food.calories}</div> )}
       
     </div>
